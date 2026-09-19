@@ -159,7 +159,7 @@ It handles:
 
 React should **not**:
 
-- Connect directly to PostgreSQL.
+- Connect directly to MySQL.
 - Calculate the official lead score.
 - Implement important business rules.
 - Store sensitive backend credentials.
@@ -233,9 +233,9 @@ AI should not be responsible for:
 
 ---
 
-## PostgreSQL
+## MySQL
 
-PostgreSQL is the primary source of truth.
+MySQL is the primary source of truth.
 
 It stores:
 
@@ -461,7 +461,7 @@ For example:
 - Use FastAPI for application/API logic.
 - Use n8n for automation and integrations.
 - Use AI where natural-language understanding is needed.
-- Use PostgreSQL for persistent data.
+- Use MySQL for persistent data.
 - Use React for the interface.
 
 Avoid unnecessary microservices, complicated infrastructure, or additional technologies unless the project actually needs them.
@@ -479,7 +479,7 @@ Set up:
 - Repository.
 - React application.
 - FastAPI application.
-- PostgreSQL.
+- MySQL.
 - n8n.
 - Environment configuration.
 
@@ -682,7 +682,7 @@ The system should remain understandable:
               /    \
              /      \
             ▼        ▼
-      POSTGRESQL    N8N
+         MYSQL      N8N
                      │
               ┌──────┼──────┐
               ▼      ▼      ▼
@@ -704,7 +704,7 @@ n8n
 AI
 → Understanding & Generation
 
-PostgreSQL
+MySQL
 → Data
 
 Google Sheets
